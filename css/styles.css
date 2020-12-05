@@ -39,6 +39,16 @@ p {
     font-size: 1.2em;
 }
 
+/* Add some padding inside the card container */
+.cards {
+    display: grid;
+    grid-gap: 4rem 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: (1, auto);
+    margin: 3em 0;
+    width: 100%;
+}
+
 .card {
     /* Add shadows to create the "card" effect */
     transition: 0.3s;
@@ -47,8 +57,13 @@ p {
     flex-direction: row;
     flex-flow: column wrap;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    padding: 0.4em;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    padding: 0 0.4em;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 
 .card img {
@@ -58,26 +73,26 @@ p {
 
 .card p {
     transition: 0.3s;
-    margin: 0.4em;
+    margin: 0 0.4em;
+    text-align: center;
 }
 
 .card:hover p {
     color: var(--main-color);
 }
-  
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.4);
+
+.card a {
+    text-decoration: none;
+    color: var(--off-color-dark);
 }
-  
-/* Add some padding inside the card container */
-.cards {
-    display: grid;
-    grid-gap: 4rem 4rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: (1, auto);
-    margin: 4rem 0;
-    width: 100%;
+
+.card img {
+    border-radius: 1.5em;
+}
+
+.card .sub-heading {
+    font-size: 1em;
+    margin-bottom: 1em;
 }
 
 @media screen and (max-width: 800px) {
