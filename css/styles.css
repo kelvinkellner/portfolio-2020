@@ -6,9 +6,11 @@
     --off-color-dark: #090B0A;
     --off-color-light: #55625D;
 }
+span { color: var(--main-color); }
 
-.main-color {
-    color: var(--main-color);
+
+.row {
+    margin-bottom: 5rem;
 }
 
 .nav {
@@ -36,4 +38,37 @@ a:hover { color: var(--main-color-dark); }
 
 p {
     font-size: 1.2em;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 1em; /* 5px rounded corners */
+}
+  
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+  
+/* Add some padding inside the card container */
+.cards {
+    display: grid;
+    grid-gap: 4rem 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: (1, auto);
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 800px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
 }
