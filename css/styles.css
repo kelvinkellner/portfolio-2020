@@ -1,0 +1,38 @@
+:root {
+    --main-color: #02B67D;
+    --main-color-dark: #017953;
+    --main-color-light: #02F2A6;
+    --off-color: #39413E;
+    --off-color-dark: #090B0A;
+    --off-color-light: #55625D;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.off-color {
+    color: var(--off-color);
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    float: right;
+}
+
+.nav-item {
+    display: inline;
+    height: 100%;
+    padding-left: 1rem;
+    font-size: 1.2em;
+}
+
+a { color: var(--main-color); }
+a:hover { color: var(--main-color-dark); }
+.nav-item a { color: var(--off-color);  text-decoration: none; }
+.nav-item a:hover { color: var(--off-color-dark); text-decoration: underline; }
+.active a { color: var(--main-color); }
+.active a:hover { color: var(--main-color-dark); }
+
+#title a { text-decoration: none; }
