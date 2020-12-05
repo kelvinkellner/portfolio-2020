@@ -11,10 +11,6 @@
     color: var(--main-color);
 }
 
-.off-color {
-    color: var(--off-color);
-}
-
 .nav {
     list-style-type: none;
     padding: 0;
@@ -35,4 +31,9 @@ a:hover { color: var(--main-color-dark); }
 .active a { color: var(--main-color); }
 .active a:hover { color: var(--main-color-dark); }
 
-#title a { text-decoration: none; }
+#title a { text-decoration: none; color: var(--off-color); }
+#title a:hover { color: var(--main-color); }
+
+p {
+    font-size: 1.2em;
+}
