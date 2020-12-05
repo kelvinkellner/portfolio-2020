@@ -8,9 +8,8 @@
 }
 span { color: var(--main-color); }
 
-
 .row {
-    margin-bottom: 6rem;
+    margin-bottom: 4em;
 }
 
 .nav {
