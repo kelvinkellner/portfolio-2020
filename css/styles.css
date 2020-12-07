@@ -95,6 +95,10 @@ p {
     margin-bottom: 1em;
 }
 
+path {
+    fill: var(--off-color);
+}
+
 @media screen and (max-width: 800px) {
     .cards {
         grid-template-columns: repeat(2, 1fr);
