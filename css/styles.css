@@ -130,3 +130,14 @@ path {
         grid-template-columns: 1fr;
     }
 }
+
+@media screen and (max-width: 549px) {
+    .nav-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        position: relative;
+        top: -3em;
+        margin-bottom: 0;
+    }
+}
