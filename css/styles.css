@@ -109,14 +109,14 @@ path {
 
 @keyframes showsmiley
 {
-    0% { top: 0rem; left: -24px; opacity: 0; transform: rotate(0); visibility: visible; }
-    20% { top: -12rem; left: -24px; opacity: 0.9; transform: rotate(0); }
-    40% { top: -12rem; left: -24px; opacity: 1; transform: rotate(0); }
-    50% { top: -12rem; left: -24px; opacity: 1; transform: rotate(40deg); }
-    60% { top: -12rem; left: -24px; opacity: 1; transform: rotate(50deg); }
-    70% { top: -12rem; left: -24px; opacity: 1; transform: rotate(-70deg); }
-    80% { top: -12rem; left: -24px; opacity: 1; transform: rotate(-80deg); }
-    100% { top: -12rem; left: -24px; opacity: 0; transform: rotate(280deg); visibility: hidden; }
+    0% { top: 5em; left: 1.33em; opacity: 0; transform: rotate(0); visibility: visible; }
+    20% { top: -1.5em; left: 1.33em; opacity: 0.9; transform: rotate(0); }
+    40% { top: -1.5em; left: 1.33em; opacity: 1; transform: rotate(0); }
+    50% { top: -1.5em; left: 1.33em; opacity: 1; transform: rotate(40deg); }
+    60% { top: -1.5em; left: 1.33em; opacity: 1; transform: rotate(50deg); }
+    70% { top: -1.5em; left: 1.33em; opacity: 1; transform: rotate(-70deg); }
+    80% { top: -1.5em; left: 1.33em; opacity: 1; transform: rotate(-80deg); }
+    100% { top: -1.5em; left: 1.33em; opacity: 0; transform: rotate(280deg); visibility: hidden; }
 }
 
 @media screen and (max-width: 800px) {

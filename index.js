@@ -4,6 +4,8 @@ function smileyEasterEgg() {
     count++;
     const smiley = document.getElementById('smiley');
     const clone = smiley.cloneNode(true);
+    clone.style.position = 'absolute';
+    clone.style.top = document.getElementById('title').getBoundingClientRect().top;
     clone.id = 'smiley-clone-' + count;
     smiley.before(clone);
     clone.classList.add('smiley-easter-egg');
