@@ -101,7 +101,7 @@ path {
 
 .smiley-easter-egg {
     position: relative;
-    animation: showsmiley 4s;
+    animation: showsmiley 5s;
     transition-timing-function: ease-in-out;
 }
 
@@ -115,7 +115,7 @@ path {
     60% { top: -110px; left: -24px; opacity: 1; transform: rotate(50deg); }
     70% { top: -110px; left: -24px; opacity: 1; transform: rotate(-70deg); }
     80% { top: -110px; left: -24px; opacity: 1; transform: rotate(-80deg); size: 32px 32px; }
-    100% { top: -110px; left: -24px; opacity: 0; transform: rotate(240deg); visibility: hidden; size: 0 0; }
+    100% { top: -110px; left: -24px; opacity: 0; transform: rotate(280deg); visibility: hidden; size: 0 0; }
 }
 
 @media screen and (max-width: 800px) {

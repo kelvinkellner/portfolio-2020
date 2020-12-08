@@ -6,6 +6,6 @@ function smileyEasterEgg() {
             if(smiley.style.visibility = 'hidden') {
                 smiley.classList.remove('smiley-easter-egg');
             }
-        }, 4000);
+        }, 5000);
     }
 }
