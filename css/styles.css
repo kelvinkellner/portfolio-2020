@@ -99,6 +99,25 @@ path {
     fill: var(--off-color);
 }
 
+.smiley-easter-egg {
+    position: relative;
+    animation: showsmiley 4s;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes showsmiley
+{
+    0% { top: -20px; left: -24px; opacity: 0; transform: rotate(0); visibility: visible; size: 0 0; }
+    10% { top: -90px; left: -24px; opacity: 0.6; transform: rotate(0); size: 24px 24px; }
+    20% { top: -105px; left: -24px; opacity: 0.9; transform: rotate(0); size: 32px 32px; }
+    40% { top: -110px; left: -24px; opacity: 1; transform: rotate(0); }
+    50% { top: -110px; left: -24px; opacity: 1; transform: rotate(40deg); }
+    60% { top: -110px; left: -24px; opacity: 1; transform: rotate(50deg); }
+    70% { top: -110px; left: -24px; opacity: 1; transform: rotate(-70deg); }
+    80% { top: -110px; left: -24px; opacity: 1; transform: rotate(-80deg); size: 32px 32px; }
+    100% { top: -110px; left: -24px; opacity: 0; transform: rotate(240deg); visibility: hidden; size: 0 0; }
+}
+
 @media screen and (max-width: 800px) {
     .cards {
         grid-template-columns: repeat(2, 1fr);
